@@ -63,7 +63,9 @@
       <section class="main-hero">
         <div class="container container-hero">
           <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-          <button class="button-main" type="button">Замовити послугу</button>
+          <button class="button-main" type="button" data-modal-open>
+            Замовити послугу
+          </button>
         </div>
       </section>
 
@@ -135,30 +137,45 @@
           <h2 class="main-title">Чим ми займаємося</h2>
           <ul class="list list-team">
             <li class="about-item">
-              <img
-                class="img"
-                src="./photo/img1.jpg"
-                alt="друкування коду"
-                width="370"
-              />
+              <div class="about-thumb">
+                <img
+                  class="img"
+                  src="./photo/img1.jpg"
+                  alt="друкування коду"
+                  width="370"
+                />
+                <div class="bg-thumb">
+                  <p class="about-text">Десктопні додатки</p>
+                </div>
+              </div>
             </li>
 
             <li class="about-item">
-              <img
-                class="img"
-                src="./photo/img2.jpg"
-                alt="розробка додатків"
-                width="370"
-              />
+              <div class="about-thumb">
+                <img
+                  class="img"
+                  src="./photo/img2.jpg"
+                  alt="розробка додатків"
+                  width="370"
+                />
+                <div class="bg-thumb">
+                  <p class="about-text">Мобільні додатки</p>
+                </div>
+              </div>
             </li>
 
             <li class="about-item">
-              <img
-                class="img"
-                src="./photo/img3.jpg"
-                alt="планшет з яскровою картинкою"
-                width="370"
-              />
+              <div class="about-thumb">
+                <img
+                  class="img"
+                  src="./photo/img3.jpg"
+                  alt="планшет з яскровою картинкою"
+                  width="370"
+                />
+                <div class="bg-thumb">
+                  <p class="about-text">Дизайнерські рішення</p>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -460,5 +477,17 @@
         </div>
       </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="model-close-button" type="button" data-modal-close>
+          <svg class="icon-close" width="11" height="11">
+            <use href="./photo/ocons2.svg#icon-close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
