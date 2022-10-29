@@ -479,6 +479,10 @@ transition: fill 250ms,background 250ms var(--color-time);
     fill: var(--color-inverted);
     transition: fill 250ms, background 250ms var(--color-time);
 }
+.clients-team:focus {
+    fill: var(--color-inverted);
+    transition: fill 250ms, background 250ms var(--color-time);
+}
 .clients-link {
     width: 170px;
     height: 92px;
@@ -495,6 +499,10 @@ transition: fill 250ms,background 250ms var(--color-time);
     border-color: var(--color-inverted);
     transition: fill 250ms, background 250ms var(--color-time);
 }
+.clients-link:focus {
+    background-color: var(--color-inverted);
+}
+
 .clients-link:hover .clients-team {
     fill: var(--color-inverted);
     transition: fill 250ms, background 250ms var(--color-time);
@@ -754,9 +762,9 @@ letter-spacing: 0.03em;
     height: 100%;
     z-index: 1;
     background-color: rgba(0, 0, 0, 0.2);
-    visibility: 250ms var(--color-time);
+
     opacity: 1;
-    transition: opacity 250ms var(--color-time);
+    transition: opacity 250ms var(--color-time),visibility 250ms var(--color-time);
 }
 
 .is-hidden {
